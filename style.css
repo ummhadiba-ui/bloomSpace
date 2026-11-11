@@ -1,0 +1,234 @@
+/* ===== 1. Global Styling ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5EFE5;
+    color: #382D28;
+}
+
+/* ===== 2. Header ===== */
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none; /* Removed default bullet points */
+}
+nav a {
+    text-decoration: none;
+    color: #382D28;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+nav a:hover {
+    color: #A9B7A0;
+}
+header button {
+    background-color: #E8D5D0;
+    color: #382D28;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ===== 3. Hero Section ===== */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+.hero h1 {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 16px;
+    color: #74645B;
+    margin-bottom: 25px;
+}
+.hero button {
+    background-color: #A9B7A0;
+    color: #382D28;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.hero button:hover {
+    background-color: #91A18A;
+}
+
+/* ===== 4. Statistics Section ===== */
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 40px;
+}
+.stat-card {
+    background-color: #FFFCF7;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.stat-card h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.stat-card p {
+    font-size: 14px;
+    color: #74645B;
+}
+
+/* ===== 5. Add Book Section ===== */
+.add-book {
+    background-color: #FFFCF7;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.add-book h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.add-book label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.add-book input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #E8D5D0;
+    border-radius: 8px;
+    background-color: #FFFCF7;
+    font-family: inherit;
+    outline: none;
+}
+.add-book input:focus {
+    border-color: #A9B7A0;
+}
+/* Renamed button class to resolve name conflicts with the parent container class */
+.add-book-btn {
+    background-color: #E8D5D0;
+    color: #382D28;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.add-book-btn:hover {
+    background-color: #D8BDB6;
+}
+
+/* ===== 6. Reading List Section ===== */
+.reading-list {
+    padding: 20px 40px 50px;
+}
+.reading-list h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+#book-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.book-card {
+    background-color: #FFFCF7;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.book-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.book-card p {
+    font-size: 14px;
+    color: #74645B;
+    margin-bottom: 12px;
+}
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.completed {
+    background-color: #DCE8D7;
+    color: #496344;
+}
+.reading {
+    background-color: #E8D5D0;
+    color: #76514B;
+}
+
+/* ===== 7. Footer ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #E8D5D0;
+    color: #74645B;
+    font-size: 13px;
+}
+
+/* ===== 8. Responsive Design ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero {
+        padding: 60px 20px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .statistics {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .add-book {
+        margin: 20px;
+    }
+    .reading-list {
+        padding: 20px;
+    }
+    #book-list {
+        grid-template-columns: 1fr;
+    }
+}

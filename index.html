@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomSpace</title>
+    <!-- Google Fonts link added for the Poppins font used in your CSS -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BloomSpace</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Mybooks">My Books</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </nav>
+        <button>My Library</button>
+    </header>
+
+    <section class="hero">
+        <!-- Changed h2 to h1 to match your CSS selector .hero h1 -->
+        <h1>Your Reading corner</h1>
+        <p>Track your books and celebrate your progress</p>
+        <button>Explore Books</button>
+    </section>
+
+    <section class="statistics">
+        <div id="total-books" class="stat-card">
+            <h2>0</h2> <!-- Swapped position so the number looks like a counter -->
+            <p>Total Books</p>
+        </div>
+        <div id="completed-books" class="stat-card">
+            <h2>0</h2>
+            <p>Completed Books</p>
+        </div>
+        <div id="reading-books" class="stat-card">
+            <h2>0</h2>
+            <p>Currently Reading</p>
+        </div>
+    </section>
+
+    <!-- Added class="add-book" to this section so the wrapper styling works -->
+    <section class="add-book">
+        <h2>Add a New Book</h2>
+        <label for="inputform">Book Name:</label>
+        <input type="text" id="inputform" placeholder="Enter book title....">
+        <label for="authorinput">Author Name:</label>
+        <input type="text" id="authorinput" placeholder="Enter author name....">
+        <button type="submit"  id = "add-book" class="add-book-btn">Add Book</button>
+    </section>
+
+    <!-- Added class="reading-list" to this section -->
+    <section class="reading-list">
+        <h2>My Reading List</h2>
+        <p class="book-list"></p>
+      
+    </section>
+
+    <footer>
+        <p>Grow your mind, One page at a time</p>
+        <p>© 2026 BloomSpace</p>
+    </footer>
+</body>
+</html>
